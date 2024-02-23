@@ -42,6 +42,9 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+#random word generator
+gem "random-word", "~> 1.3"
+
 #Implement Bootstrap
 gem "jquery-rails"
 gem "popper_js"
