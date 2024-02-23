@@ -4,7 +4,7 @@ RSpec.describe "the main page" do
   it "exists" do
     visit "/"
 
-    expect(page).to have_content("Begin")
+    expect(page).to have_css("new_game")
   end
 end
 
