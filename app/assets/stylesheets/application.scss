@@ -1,2 +1,21 @@
 @import "bootstrap";
 
+.game-image {
+  width: 900px;
+  height: 450px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.letter-bank {
+  text-align: center;
+  margin-top: 20px;
+  display: inline-flex;
+
+  .btn {
+    margin: 5px;
+    display:inline-flex;
+    font-size: small;
+  }
+}
+
