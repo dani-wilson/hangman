@@ -1,0 +1,5 @@
+<div class="letter-bank">
+  <% ('A'..'Z').each do |letter| %>
+    <%= button_to letter, guess_path(letter: letter), method: :post, remote: true, class: "btn btn-secondary" %>
+  <% end %>
+</div>

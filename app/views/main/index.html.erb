@@ -1,0 +1,9 @@
+<div class="new-game">
+  <img src="<%= asset_path('new_game.jpeg') %>" alt="empty hangman game image" class="game-image">
+</div>
+
+<div class="letter-bank">
+  <% ('A'..'Z').each do |letter| %>
+    <%= button_to letter, guess_path(letter: letter), method: :post, remote: true, class: "btn btn-light btn-outline-dark btn-sm" %>
+  <% end %>
+</div>
