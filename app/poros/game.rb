@@ -6,7 +6,7 @@ class Game
   def initialize
     @word = word_bank.sample
     @guessed_letters = []
-    @max_attempts = 8
+    @max_attempts = 7
   end
 
   private
