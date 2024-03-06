@@ -4,12 +4,14 @@ class MainController < ApplicationController
   end
 
   def guess
-    letter = params[:letter].downcase
+    @game = Game.new
+    @guessed_letters = @game.guessed_letters
+    letter = params[:letter].upcase
 
     @guessed_letters << letter
 
-    respond_to do |format|
-      format.js { render 'update_letter_bank' }
+    if !@game.word.include?(letter)
+      @game.max_attempts -= 1
     end
   end
 end
