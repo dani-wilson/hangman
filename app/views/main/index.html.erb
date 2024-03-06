@@ -1,5 +1,11 @@
 <div class="game-image">
-  <img src="<%= asset_path('new_game.jpeg') %>" alt="empty hangman game image" class="game-image">
+  <% if @guessed_letters.nil? %>
+    <img src="<%= asset_path('new_game.jpeg') %>" alt="empty hangman game image" class="game-image">
+  <% end %>
+</div>
+
+<div class="guessed-letters">
+  <%= @guessed_letters %>
 </div>
 
 <div class="letter-bank">
